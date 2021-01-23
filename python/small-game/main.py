@@ -1,7 +1,6 @@
 
 import random
 
-
 def winner(board):
     """This function accepts the Connect Four board as a parameter.
     If there is no winner, the function will return the empty string "".
