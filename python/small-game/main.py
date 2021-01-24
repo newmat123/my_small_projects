@@ -53,11 +53,13 @@ def display_board(board):
 
     print("   0   1   2   3   4   5   6")
     for row in range(7):
-        print("   " + board[row][0] + " | " + board[row][1] + " | " + board[row][2] + " | " + board[row][3] + " | " + board[row][4] + " | " + board[row][5] + " | " + board[row][6])
+        line = "  "
+        for col in range(7):
+            line += (" " + board[row][col] + " |")
+        print(line[:-1])
         if row != 6:
             print("  ---+---+---+---+---+---+---")
     print()
-
 
 def make_user_move(board):
     """This function accepts the Connect Four board as a parameter.
